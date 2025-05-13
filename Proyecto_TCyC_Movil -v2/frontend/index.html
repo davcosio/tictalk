@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TicTalk - Asistente de Voz para CDMX</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">🎙️</div>
+            <div class="title">
+                <h1>TicTalk</h1>
+                <p>Asistente de Voz para Ciudad de México (CDMX)</p>
+            </div>
+        </div>
+
+        <div class="commands">
+            <button class="command-btn blue" onclick="listenCommand()">
+                <span>🗣️</span> Usar Voz
+            </button>
+            <button class="command-btn purple" onclick="tellTime()">
+                <span>🕒</span> Hora Actual
+            </button>
+            <button class="command-btn red" onclick="tellDate()">
+                <span>📅</span> Fecha Hoy
+            </button>
+            <button class="command-btn orange" onclick="tellWeather()">
+                <span>☀️</span> Clima CDMX
+            </button>
+        </div>
+
+        <div class="results">
+            <div class="results-title">Resultados</div>
+            <div class="results-content" id="resultText">
+                Bienvenido a TicTalk. Selecciona una opción o usa el comando de voz.
+            </div>
+            <div class="status" id="status"></div>
+        </div>
+
+        <div class="footer">
+            <div class="voice-config">
+                <label>Configurar Voz:</label>
+                <select class="voice-select" id="voiceSelect">
+                    <option value="default">Voz predeterminada</option>
+                </select>
+                <button class="test-btn" onclick="testVoice()">Probar Voz</button>
+            </div>
+            <div class="credits">
+                Desarrollado by COSIO MORALES EDGAR DAVID v2.0.Movil © 2025
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
